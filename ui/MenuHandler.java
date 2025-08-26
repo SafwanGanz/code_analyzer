@@ -137,7 +137,7 @@ public class MenuHandler {
         
         try {
             AnalysisResult result = engine.generateReport();
-            engine.reportGenerator.exportToFile(result, outputPath);
+            engine.exportReportToFile(result, outputPath);
             System.out.println("✅ Results exported to: " + outputPath);
         } catch (Exception e) {
             System.out.println("❌ Error exporting results: " + e.getMessage());

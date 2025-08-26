@@ -12,6 +12,9 @@ import java.util.Map;
 public class AnalysisEngine {
     private final FileProcessor fileProcessor;
     private final ReportGenerator reportGenerator;
+    public void exportReportToFile(AnalysisResult result, String outputPath) throws Exception {
+        reportGenerator.exportToFile(result, outputPath);
+    }
     private final ExecutorService executorService;
     private final Map<String, FileAnalysis> analysisCache;
     
