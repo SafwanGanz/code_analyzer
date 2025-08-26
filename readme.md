@@ -43,7 +43,7 @@ Smart Code Analyzer is a comprehensive Java code analysis tool designed for ente
 ```bash
 # Clone the repository
 git clone https://github.com/SafwanGanz/code_analyzer
-cd smart-code-analyzer
+cd code_analyzer
 
 # Compile the project
 javac -d build -cp src src/main/java/com/codeanalyzer/**/*.java
