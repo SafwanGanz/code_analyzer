@@ -1,4 +1,4 @@
-# Smart Code Analyzer - Professional Edition
+# Smart Code Analyzer
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -42,8 +42,8 @@ Smart Code Analyzer is a comprehensive Java code analysis tool designed for ente
 ### Building the Project
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd smart-code-analyzer
+git clone https://github.com/SafwanGanz/code_analyzer
+cd code_analyzer
 
 # Compile the project
 javac -d build -cp src src/main/java/com/codeanalyzer/**/*.java
