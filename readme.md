@@ -1,4 +1,4 @@
-# Smart Code Analyzer - Professional Edition
+# Smart Code Analyzer
 
 ## Table of Contents
 1. [Overview](#overview)
