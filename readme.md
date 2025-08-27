@@ -802,7 +802,7 @@ We use labels to categorize issues:
 
 <div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: MIT](LICENSE)
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
