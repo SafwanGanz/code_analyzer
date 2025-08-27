@@ -722,6 +722,4 @@ If this tool helps you write better code, consider:
 
 **Smart Code Analyzer** • *Empowering developers with actionable code quality insights* • Made with ❤️ by [SafwanGanz](https://github.com/SafwanGanz)
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer)
-
 </div>
