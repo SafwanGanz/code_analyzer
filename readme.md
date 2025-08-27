@@ -1,4 +1,4 @@
-# 🚀 Smart Code Analyzer
+# Smart Code Analyzer
 
 <div align="center">
 
@@ -8,200 +8,162 @@
 [![GitHub forks](https://img.shields.io/github/forks/SafwanGanz/code_analyzer?style=for-the-badge)](https://github.com/SafwanGanz/code_analyzer/network)
 [![GitHub issues](https://img.shields.io/github/issues/SafwanGanz/code_analyzer?style=for-the-badge)](https://github.com/SafwanGanz/code_analyzer/issues)
 [![GitHub release](https://img.shields.io/github/v/release/SafwanGanz/code_analyzer?style=for-the-badge)](https://github.com/SafwanGanz/code_analyzer/releases)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/SafwanGanz/code_analyzer/ci.yml?style=for-the-badge)](https://github.com/SafwanGanz/code_analyzer/actions)
+[![Code Coverage](https://img.shields.io/codecov/c/github/SafwanGanz/code_analyzer?style=for-the-badge)](https://codecov.io/gh/SafwanGanz/code_analyzer)
 
 **Professional-grade Java code analysis tool for enterprise-level quality assessment**
 
-[📖 Documentation](#-table-of-contents) • [🚀 Quick Start](#-quick-start) • [💡 Features](#-key-features) • [🛠️ API Reference](#-api-reference) • [🤝 Contributing](#-contributing)
-
-![Smart Code Analyzer Demo](https://via.placeholder.com/800x400/1e293b/ffffff?text=Smart+Code+Analyzer+Demo)
+[Documentation](#table-of-contents) • [Quick Start](#quick-start) • [Features](#key-features) • [API Reference](#api-reference) • [Contributing](#contributing)
 
 </div>
 
 ---
 
-## ✨ Why Smart Code Analyzer?
+## Overview
 
-> **Empower your development team with actionable insights into code quality, complexity, and maintainability.**
+Smart Code Analyzer is a comprehensive Java code analysis tool designed for enterprise-level code quality assessment. It provides deep insights into code complexity, maintainability, dependencies, and identifies potential code smells with professional-grade reporting capabilities.
 
-🎯 **Enterprise-Ready** | 🧠 **AI-Powered Analysis** | ⚡ **Lightning Fast** | 🔧 **Highly Extensible**
+### Why Choose Smart Code Analyzer?
 
-<details>
-<summary><strong>🌟 What makes us different?</strong></summary>
+**Enterprise-Ready** | **Multi-threaded Processing** | **Comprehensive Analysis** | **Extensible Architecture**
 
-- **🔥 Multi-threaded Processing**: Analyze thousands of files in seconds
-- **📊 Professional Metrics**: Beyond basic LOC - get cognitive complexity, maintainability index, and technical debt
-- **🎨 Beautiful Reports**: Generate stunning HTML reports with interactive charts
-- **🔍 Smart Detection**: AI-enhanced code smell detection with 95% accuracy
-- **🏗️ Architecture Analysis**: Visualize dependencies and identify architectural issues
-- **🚀 Zero Configuration**: Works out of the box with sensible defaults
+- **High Performance**: Multi-threaded analysis engine processes thousands of files in seconds
+- **Professional Metrics**: Advanced metrics including cognitive complexity, maintainability index, and technical debt analysis
+- **Smart Detection**: Intelligent code smell detection with customizable patterns
+- **Architecture Analysis**: Comprehensive dependency mapping and architectural issue identification
+- **Export Capabilities**: Generate reports in multiple formats (HTML, JSON, XML, TXT)
+- **Zero Configuration**: Works out of the box with sensible defaults
 
-</details>
+## Table of Contents
 
-## 📋 Table of Contents
+- [Quick Start](#quick-start)
+- [Key Features](#key-features)
+- [Architecture](#architecture)
+- [Installation & Setup](#installation--setup)
+- [Usage Guide](#usage-guide)
+- [Features Deep Dive](#features-deep-dive)
+- [API Reference](#api-reference)
+- [Configuration](#configuration)
+- [Performance](#performance)
+- [Extending the Tool](#extending-the-tool)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
-<details open>
-<summary><strong>📚 Navigate Documentation</strong></summary>
-
-- [🚀 Quick Start](#-quick-start)
-- [💡 Key Features](#-key-features)
-- [🏗️ Architecture](#️-architecture)
-- [📦 Installation](#-installation--setup)
-- [🎯 Usage Guide](#-usage-guide)
-- [📊 Features Deep Dive](#-features-deep-dive)
-- [🛠️ API Reference](#️-api-reference)
-- [⚙️ Configuration](#️-configuration)
-- [📈 Performance](#-performance)
-- [🔧 Extending](#-extending-the-tool)
-- [🐛 Troubleshooting](#-troubleshooting)
-- [🤝 Contributing](#-contributing)
-
-</details>
-
-## 🚀 Quick Start
-
-<div align="center">
+## Quick Start
 
 ```bash
-# 📥 Clone and run in 30 seconds
+# Clone and build
 git clone https://github.com/SafwanGanz/code_analyzer.git
 cd code_analyzer
-./scripts/quick-start.sh
-```
-
-</div>
-
-### 🎮 Try it now!
-
-```bash
-# 🔨 Build
 javac -d build -cp src src/main/java/com/codeanalyzer/**/*.java
 jar cfm SmartCodeAnalyzer.jar MANIFEST.MF -C build .
 
-# 🚀 Run
+# Run analysis
 java -jar SmartCodeAnalyzer.jar
-
-# 🎉 Analyze your first project
-# Choose option 1: 📁 Analyze Directory
-# Enter path: /your/java/project/src
 ```
 
-## 💡 Key Features
+### Analyze Your First Project
+
+1. Start the application: `java -jar SmartCodeAnalyzer.jar`
+2. Choose option 1: "Analyze Directory"
+3. Enter your Java project path
+4. View comprehensive analysis results
+
+## Key Features
 
 <table>
 <tr>
-<td width="33%">
+<td width="50%">
 
-### 🧠 **Smart Analysis**
+### Advanced Analysis Engine
+- **Cyclomatic Complexity** measurement
 - **Cognitive Complexity** analysis
-- **Maintainability Index** scoring
+- **Maintainability Index** scoring (0-100 scale)
 - **Technical Debt** quantification
-- **Code Smell** detection
+- **Code Smell** detection with 15+ patterns
 
 </td>
-<td width="33%">
+<td width="50%">
 
-### ⚡ **Performance**
-- **Multi-threaded** processing
+### Performance & Scalability
+- **Multi-threaded** parallel processing
 - **Memory optimized** for large codebases
-- **Parallel analysis** engine
-- **Streaming** for massive projects
-
-</td>
-<td width="33%">
-
-### 📊 **Professional Reports**
-- **Interactive HTML** dashboards
-- **JSON/XML** export
-- **Trend analysis** over time
-- **Team collaboration** features
+- **Streaming analysis** for massive projects
+- **Configurable thread pools**
+- **Efficient resource management**
 
 </td>
 </tr>
 </table>
 
-### 🎯 **Advanced Code Quality Metrics**
+### Supported Code Quality Metrics
 
-| 📈 Metric | 📋 Description | 🎨 Visualization |
-|-----------|----------------|------------------|
-| **Cyclomatic Complexity** | Measures code path complexity | ![Complexity](https://img.shields.io/badge/Complexity-Low%20to%20High-brightgreen?style=flat-square) |
-| **Cognitive Complexity** | Human-perceived difficulty | ![Cognitive](https://img.shields.io/badge/Cognitive-Easy%20to%20Hard-orange?style=flat-square) |
-| **Maintainability Index** | Overall code maintainability (0-100) | ![Maintainability](https://img.shields.io/badge/Maintainability-0%20to%20100-blue?style=flat-square) |
-| **Technical Debt Ratio** | Ratio of problematic to clean code | ![TechDebt](https://img.shields.io/badge/Tech%20Debt-Low%20to%20High-red?style=flat-square) |
+| Metric | Description | Range |
+|--------|-------------|-------|
+| **Cyclomatic Complexity** | Measures code path complexity | 1+ (Lower is better) |
+| **Cognitive Complexity** | Human-perceived code difficulty | 1+ (Lower is better) |
+| **Maintainability Index** | Overall code maintainability score | 0-100 (Higher is better) |
+| **Technical Debt Ratio** | Ratio of problematic to clean code | 0-1 (Lower is better) |
+| **Lines of Code** | Total lines including comments | N/A |
+| **Method Count** | Number of methods per class | N/A |
 
-## 🏗️ Architecture
+## Architecture
 
-<div align="center">
+The Smart Code Analyzer follows a modular architecture with clean separation of concerns:
 
-```mermaid
-graph TD
-    A[🎮 CLI Interface] --> B[🚀 Analysis Engine]
-    B --> C[📂 File Processor]
-    B --> D[📊 Metrics Collector]
-    B --> E[🔍 Code Smell Detector]
-    B --> F[🧮 Complexity Analyzer]
-    C --> G[📄 File Analysis]
-    D --> G
-    E --> G
-    F --> G
-    G --> H[📋 Analysis Result]
-    H --> I[📊 Report Generator]
-    I --> J[💾 Export Formats]
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   CLI Interface │────│ Analysis Engine │────│ Report Generator│
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                              │
+                    ┌─────────┼─────────┐
+                    │         │         │
+            ┌───────▼───┐ ┌───▼────┐ ┌──▼──────────┐
+            │File       │ │Metrics │ │Code Smell   │
+            │Processor  │ │Analyzer│ │Detector     │
+            └───────────┘ └────────┘ └─────────────┘
 ```
 
-</div>
-
-### 🎨 **Design Patterns**
-
-<div align="center">
+### Design Patterns Implementation
 
 | Pattern | Usage | Benefit |
 |---------|--------|---------|
-| ![Strategy](https://img.shields.io/badge/Strategy-Analysis%20Types-blue?style=flat-square) | Different analyzer implementations | Flexible analysis strategies |
-| ![Factory](https://img.shields.io/badge/Factory-Component%20Creation-green?style=flat-square) | Configuration-based component creation | Easy extensibility |
-| ![Observer](https://img.shields.io/badge/Observer-Async%20Processing-orange?style=flat-square) | Asynchronous result handling | Non-blocking operations |
-| ![Command](https://img.shields.io/badge/Command-Menu%20Operations-purple?style=flat-square) | Encapsulated menu actions | Clean command handling |
+| **Strategy** | Different analysis implementations | Flexible analysis strategies |
+| **Factory** | Configuration-based component creation | Easy extensibility |
+| **Observer** | Asynchronous result processing | Non-blocking operations |
+| **Command** | Menu operation encapsulation | Clean command handling |
 
-</div>
+## Installation & Setup
 
-## 📦 Installation & Setup
+### Prerequisites
 
-### 🔧 **Prerequisites**
+[![Java](https://img.shields.io/badge/Java-11%2B-ED8B00?style=flat-square&logo=openjdk)](https://openjdk.java.net/)
+[![Maven](https://img.shields.io/badge/Maven-3.6%2B-C71A36?style=flat-square&logo=apache-maven)](https://maven.apache.org/)
+[![Memory](https://img.shields.io/badge/RAM-2GB%2B-9cf?style=flat-square)](https://github.com/SafwanGanz/code_analyzer)
 
-<div align="center">
-
-![Java](https://img.shields.io/badge/Java-11%2B-ED8B00?style=for-the-badge&logo=openjdk)
-![Maven](https://img.shields.io/badge/Maven-3.6%2B-C71A36?style=for-the-badge&logo=apache-maven)
-![Memory](https://img.shields.io/badge/RAM-2GB%2B-9cf?style=for-the-badge)
-![OS](https://img.shields.io/badge/OS-Cross%20Platform-success?style=for-the-badge)
-
-</div>
-
-### 📋 **System Requirements**
+### System Requirements
 
 | Component | Minimum | Recommended | Enterprise |
 |-----------|---------|-------------|------------|
-| **☕ Java Version** | `11` | `17+` | `21+` |
-| **🧠 RAM** | `2GB` | `4GB` | `8GB+` |
-| **⚡ CPU Cores** | `2` | `4` | `8+` |
-| **💾 Storage** | `100MB` | `500MB` | `2GB+` |
+| **Java Version** | 11 | 17+ | 21+ |
+| **RAM** | 2GB | 4GB | 8GB+ |
+| **CPU Cores** | 2 | 4 | 8+ |
+| **Storage** | 100MB | 500MB | 2GB+ |
 
-### 🚀 **Installation Methods**
+### Installation Methods
 
-<details>
-<summary><strong>📦 Method 1: Pre-built Release (Recommended)</strong></summary>
+#### Method 1: Pre-built Release (Recommended)
 
 ```bash
 # Download latest release
 curl -L https://github.com/SafwanGanz/code_analyzer/releases/latest/download/SmartCodeAnalyzer.jar -o SmartCodeAnalyzer.jar
 
-# Run immediately
-java -jar SmartCodeAnalyzer.jar
+# Verify installation
+java -jar SmartCodeAnalyzer.jar --version
 ```
 
-</details>
-
-<details>
-<summary><strong>🔨 Method 2: Build from Source</strong></summary>
+#### Method 2: Build from Source
 
 ```bash
 # Clone repository
@@ -214,15 +176,9 @@ mvn clean compile assembly:single
 # Or build manually
 javac -d build -cp src src/main/java/com/codeanalyzer/**/*.java
 jar cfm SmartCodeAnalyzer.jar MANIFEST.MF -C build .
-
-# Verify installation
-java -jar SmartCodeAnalyzer.jar --version
 ```
 
-</details>
-
-<details>
-<summary><strong>🐳 Method 3: Docker (Coming Soon)</strong></summary>
+#### Method 3: Docker (Coming Soon)
 
 ```bash
 # Pull Docker image
@@ -232,278 +188,315 @@ docker pull safwanganz/smart-code-analyzer:latest
 docker run -v /your/project:/workspace safwanganz/smart-code-analyzer
 ```
 
-</details>
+## Usage Guide
 
-## 🎯 Usage Guide
-
-### 🎮 **Interactive Menu**
-
-<div align="center">
+### Interactive Menu System
 
 ```
-🚀 Smart Code Analyzer v2.0
+Smart Code Analyzer v2.0
 Professional Edition
 ===========================
 
-📋 Select an option:
-1. 📁 Analyze Directory          5. 📈 Show Complexity Metrics
-2. 📄 Analyze Single File        6. 🔗 Analyze Dependencies  
-3. 📊 Generate Analysis Report   7. 💾 Export Results
-4. 🔍 Find Code Smells          8. 🚪 Exit
+Select an option:
+1. Analyze Directory          5. Show Complexity Metrics
+2. Analyze Single File        6. Analyze Dependencies  
+3. Generate Analysis Report   7. Export Results
+4. Find Code Smells          8. Exit
 ```
 
-</div>
+### Command Line Examples
 
-### 🎬 **Demo Workflow**
-
-<details>
-<summary><strong>🎯 Analyze a Spring Boot Project</strong></summary>
+#### Analyze a Spring Boot Project
 
 ```bash
-# Start the analyzer
 java -jar SmartCodeAnalyzer.jar
 
-# Choose: 1 📁 Analyze Directory
+# Choose: 1 (Analyze Directory)
 Choice: 1
 
-# Enter your project path
+# Enter project path
 Enter directory path: /workspace/my-spring-project/src/main/java
 
-# Watch the magic happen! ✨
-🔄 Analyzing directory: /workspace/my-spring-project/src/main/java
-📊 Processing files... ████████████████████ 100% (127/127)
-⚡ Using 8 threads for parallel processing
-🧠 Analyzing complexity patterns...
-🔍 Detecting code smells...
-🔗 Mapping dependencies...
+# Output:
+Analyzing directory: /workspace/my-spring-project/src/main/java
+Processing files... 100% (127/127)
+Using 8 threads for parallel processing
+Analyzing complexity patterns...
+Detecting code smells...
+Mapping dependencies...
 
-✅ Analysis complete! 
-📈 Processed 127 files in 2,341 ms
-📊 Found 23 potential improvements
-🎯 Average maintainability: 78.5/100
+Analysis complete! 
+Processed 127 files in 2,341 ms
+Found 23 potential improvements
+Average maintainability: 78.5/100
 ```
 
-</details>
+#### Single File Analysis
 
-### 📊 **Sample Output**
+```bash
+Choice: 2
+Enter Java file path: /path/to/UserService.java
 
-<details>
-<summary><strong>📄 Single File Analysis</strong></summary>
+=== FILE ANALYSIS ===
+File: UserService.java
+Lines: 156 | Classes: 1 | Methods: 8
+Complexity: 12 (Moderate)
+Maintainability: 73.45/100 (Good)
 
-```
-📄 === FILE ANALYSIS ===
-🗂️  File: UserService.java
-📏 Lines: 156 | 📝 Classes: 1 | 🔧 Methods: 8
-🧠 Complexity: 12 (Moderate)
-📊 Maintainability: 73.45/100 (Good)
-
-🎯 Recommendations:
-• Consider breaking down the `processUserData` method (78 lines)
+Recommendations:
+• Consider breaking down the processUserData method (78 lines)
 • Remove 3 TODO comments
-• Replace magic number `10` with named constant
+• Replace magic number 10 with named constant
 ```
 
-</details>
+## Features Deep Dive
 
-## 📊 Features Deep Dive
+### Code Smell Detection
 
-### 🔍 **Code Smell Detection**
+The analyzer detects 15+ types of code smells with configurable patterns:
 
-<div align="center">
+| Smell Type | Description | Detection Pattern | Severity |
+|------------|-------------|-------------------|----------|
+| **Long Method** | Methods exceeding 500 characters | `\{[^}]{500,}\}` | High |
+| **Magic Numbers** | Hardcoded numeric literals | `\b(?<!\.)\\d{2,}\b` | Medium |
+| **TODO Comments** | Unfinished implementation markers | `//\s*TODO` | Low |
+| **Debug Statements** | System.out.println usage | `System\.out\.print` | Medium |
+| **Empty Catch** | Exception handling without action | `catch\s*\([^)]+\)\s*\{\s*\}` | High |
+| **God Class** | Classes with excessive responsibilities | `class\s+\w+[^}]{2000,}` | High |
+| **Feature Envy** | Excessive method chaining | `(\w+\.){3,}\w+` | Medium |
 
-| 🚨 Smell Type | 📋 Description | 🎯 Detection Pattern | 🚨 Severity |
-|---------------|----------------|---------------------|-------------|
-| **Long Method** | Methods > 500 chars | `\{[^}]{500,}\}` | ![High](https://img.shields.io/badge/High-red) |
-| **Magic Numbers** | Hardcoded literals | `\b(?<!\.)\\d{2,}\b` | ![Medium](https://img.shields.io/badge/Medium-orange) |
-| **TODO Comments** | Unfinished code | `//\s*TODO` | ![Low](https://img.shields.io/badge/Low-yellow) |
-| **Debug Statements** | System.out usage | `System\.out\.print` | ![Medium](https://img.shields.io/badge/Medium-orange) |
-| **Empty Catch** | Silent exceptions | `catch\s*\([^)]+\)\s*\{\s*\}` | ![High](https://img.shields.io/badge/High-red) |
+### Complexity Analysis Scales
 
-</div>
-
-### 📈 **Complexity Analysis**
-
-<details>
-<summary><strong>🧠 Cyclomatic Complexity Scale</strong></summary>
+#### Cyclomatic Complexity Levels
 
 | Range | Level | Description | Action Needed |
 |-------|--------|-------------|---------------|
-| `1-5` | ![Low](https://img.shields.io/badge/Low-brightgreen) | Simple, easy to test | ✅ Maintain |
-| `6-10` | ![Moderate](https://img.shields.io/badge/Moderate-yellow) | More complex, manageable | ⚠️ Monitor |
-| `11-20` | ![High](https://img.shields.io/badge/High-orange) | Complex, difficult to test | 🔧 Refactor Soon |
-| `21+` | ![Very High](https://img.shields.io/badge/Very%20High-red) | Immediate attention needed | 🚨 Refactor Now |
+| 1-5 | Low | Simple, easy to test | Maintain current quality |
+| 6-10 | Moderate | More complex, manageable | Monitor for growth |
+| 11-20 | High | Complex, difficult to test | Consider refactoring |
+| 21+ | Very High | Immediate attention needed | Refactor immediately |
 
-</details>
-
-### 🎯 **Maintainability Index**
-
-<div align="center">
+#### Maintainability Index Scale
 
 ```
-🎯 Maintainability Scale (0-100)
+Maintainability Score (0-100):
 
-85-100  ████████████████████ 🌟 Excellent    
-70-84   ████████████████     ✅ Good        
-50-69   ████████████         ⚠️  Needs Work  
-0-49    ████████             🚨 Legacy Code  
+85-100  ████████████████████ Excellent    
+70-84   ████████████████     Good        
+50-69   ████████████         Needs Work  
+0-49    ████████             Legacy Code  
 ```
 
-</div>
+### Dependency Analysis Features
 
-## 🛠️ API Reference
+- **Import Mapping**: Complete tracking of all import statements
+- **Package Usage Analysis**: Identification of most frequently used packages
+- **External Dependency Detection**: Highlights non-JDK dependencies
+- **Circular Dependency Detection**: Identifies potential architectural issues
+- **Dependency Tree Visualization**: Visual representation of component relationships
 
-### 🚀 **Core Classes**
+## API Reference
 
-<details>
-<summary><strong>🔧 AnalysisEngine</strong></summary>
+### Core Classes
+
+#### AnalysisEngine
+
+The central orchestration class for all analysis operations.
 
 ```java
 public class AnalysisEngine {
-    // 🚀 Async directory analysis
+    // Asynchronous directory analysis
     public CompletableFuture<AnalysisResult> analyzeDirectory(Path directory)
     
-    // 📄 Single file analysis  
+    // Single file analysis  
     public CompletableFuture<FileAnalysis> analyzeFile(Path file)
     
-    // 📊 Generate comprehensive report
+    // Generate comprehensive report
     public AnalysisResult generateReport()
     
-    // 🛑 Graceful shutdown
+    // Graceful shutdown with resource cleanup
     public void shutdown()
 }
 ```
 
-</details>
+#### FileAnalysis
 
-<details>
-<summary><strong>📄 FileAnalysis</strong></summary>
+Represents detailed analysis results for a single file.
 
 ```java
 public class FileAnalysis {
-    public String getFilePath()                        // 🗂️ File path
-    public CodeMetrics getMetrics()                    // 📊 Basic metrics
-    public ComplexityMetrics getComplexityMetrics()    // 🧠 Complexity data
-    public Map<String, Integer> getCodeSmells()        // 🔍 Detected smells
-    public double getMaintainabilityIndex()            // 🎯 Maintainability score
+    public String getFilePath()                        // File path information
+    public CodeMetrics getMetrics()                    // Basic code metrics
+    public ComplexityMetrics getComplexityMetrics()    // Complexity analysis data
+    public Map<String, Integer> getCodeSmells()        // Detected code smells
+    public double getMaintainabilityIndex()            // Maintainability score
+    public List<String> getDependencies()              // File dependencies
+    public QualityGrade getOverallGrade()              // Overall quality assessment
 }
 ```
 
-</details>
+#### AnalysisResult
 
-### 🔌 **Plugin Interfaces**
+Aggregated results for multiple files with summary statistics.
 
 ```java
-// 🧮 Custom complexity analyzer
-public interface ComplexityAnalyzer {
-    ComplexityMetrics analyze(String content);
-}
-
-// 🔍 Custom smell detector  
-public interface CodeSmellDetector {
-    Map<String, Integer> detectSmells(String content);
-}
-
-// 🔗 Custom dependency analyzer
-public interface DependencyAnalyzer {
-    List<String> analyzeDependencies(String content);
+public class AnalysisResult {
+    public int getTotalFiles()                         // Total analyzed files
+    public double getAverageComplexity()               // Average complexity score
+    public List<FileAnalysis> getTopComplexFiles(int limit)  // Most complex files
+    public int getTotalCodeSmells()                    // Total code smell count
+    public Map<String, Integer> getCodeSmellSummary()  // Code smell distribution
+    public TechnicalDebtSummary getTechnicalDebt()     // Technical debt analysis
 }
 ```
 
-## ⚙️ Configuration
+### Analyzer Interfaces
 
-### 🎛️ **Analysis Configuration**
+#### ComplexityAnalyzer Interface
 
-<details>
-<summary><strong>📝 Configuration Options</strong></summary>
+```java
+public interface ComplexityAnalyzer {
+    ComplexityMetrics analyze(String content);
+    ComplexityGrade calculateGrade(ComplexityMetrics metrics);
+}
+```
+
+#### CodeSmellDetector Interface
+
+```java
+public interface CodeSmellDetector {
+    Map<String, Integer> detectSmells(String content);
+    List<CodeSmellInstance> getDetailedSmells(String content);
+}
+```
+
+#### DependencyAnalyzer Interface
+
+```java
+public interface DependencyAnalyzer {
+    List<String> analyzeDependencies(String content);
+    DependencyGraph buildDependencyGraph(List<FileAnalysis> analyses);
+}
+```
+
+## Configuration
+
+### Analysis Configuration
+
+The `AnalysisConfiguration` class provides centralized settings management:
 
 ```java
 public class AnalysisConfiguration {
-    // 🧵 Thread pool settings
+    // Thread pool configuration
     public static int getThreadPoolSize()
     
-    // 🔍 Code smell patterns
+    // Code smell detection patterns
     public static Map<String, Pattern> getCodeSmellPatterns()
     
-    // 📊 Complexity thresholds
+    // Complexity analysis thresholds
     public static ComplexityThresholds getComplexityThresholds()
     
-    // 📁 File inclusion/exclusion rules
+    // File inclusion/exclusion rules
     public static FileFilterSettings getFileFilters()
+    
+    // Report generation settings
+    public static ReportConfiguration getReportSettings()
 }
 ```
 
-</details>
+### Customizing Code Smell Detection
 
-### 🎨 **Custom Smell Patterns**
+Add custom code smell patterns:
 
 ```java
-// 🔧 Add custom code smell detection
 private static Map<String, Pattern> initializeCodeSmellPatterns() {
     Map<String, Pattern> patterns = new HashMap<>();
     
-    // 🎯 God Class detection
+    // God Class detection
     patterns.put("God Class", 
         Pattern.compile("class\\s+\\w+[^}]{2000,}"));
         
-    // 🔗 Feature Envy detection  
+    // Feature Envy detection  
     patterns.put("Feature Envy", 
         Pattern.compile("(\\w+\\.){3,}\\w+"));
+        
+    // Custom security patterns
+    patterns.put("Hardcoded Password", 
+        Pattern.compile("password\\s*=\\s*[\"'][^\"']+[\"']"));
         
     return patterns;
 }
 ```
 
-## 📈 Performance
+### Thread Pool Configuration
 
-### ⚡ **Benchmark Results**
+Customize thread pool settings for optimal performance:
 
-<div align="center">
+```java
+// Default configuration based on system capabilities
+private static final int DEFAULT_THREAD_POOL_SIZE = 
+    Runtime.getRuntime().availableProcessors();
 
-| 📊 Project Size | 📁 Files | ⏱️ Time | 🧠 Memory | 🚀 Throughput |
-|-----------------|----------|---------|-----------|---------------|
-| **Small** | 45 | `1.2s` | `128MB` | ![37 files/s](https://img.shields.io/badge/37%20files%2Fs-brightgreen) |
-| **Medium** | 156 | `4.8s` | `256MB` | ![32 files/s](https://img.shields.io/badge/32%20files%2Fs-green) |
-| **Large** | 743 | `18.3s` | `512MB` | ![40 files/s](https://img.shields.io/badge/40%20files%2Fs-brightgreen) |
-| **Enterprise** | 2,451 | `67.2s` | `1GB` | ![36 files/s](https://img.shields.io/badge/36%20files%2Fs-green) |
+// Custom configuration
+System.setProperty("analyzer.threads", "8");
+System.setProperty("analyzer.queue.size", "1000");
+System.setProperty("analyzer.timeout", "300");
+```
 
-</div>
+## Performance
 
-### 🔧 **Performance Optimization**
+### Benchmark Results
 
-<details>
-<summary><strong>⚡ Memory Optimization</strong></summary>
+Performance metrics across different project sizes:
+
+| Project Size | Files | Processing Time | Memory Usage | Throughput |
+|--------------|-------|-----------------|--------------|------------|
+| **Small** | 45 | 1.2s | 128MB | 37 files/s |
+| **Medium** | 156 | 4.8s | 256MB | 32 files/s |
+| **Large** | 743 | 18.3s | 512MB | 40 files/s |
+| **Enterprise** | 2,451 | 67.2s | 1GB | 36 files/s |
+
+### Performance Optimization
+
+#### Memory Optimization
 
 ```bash
-# 🚀 For large projects
+# For large projects
 java -Xmx4g -XX:+UseG1GC -jar SmartCodeAnalyzer.jar
 
-# 📊 Monitor performance
+# Monitor GC performance
 java -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -jar SmartCodeAnalyzer.jar
 
-# 🎯 Profile memory usage
+# Profile memory usage
 java -XX:+HeapDumpOnOutOfMemoryError -jar SmartCodeAnalyzer.jar
 ```
 
-</details>
-
-<details>
-<summary><strong>🧵 Thread Pool Tuning</strong></summary>
+#### Thread Pool Tuning
 
 ```java
-// 🎛️ Adjust for your system
-System.setProperty("analyzer.threads", "8");      // CPU cores
-System.setProperty("analyzer.queue.size", "1000"); // Queue capacity
-System.setProperty("analyzer.timeout", "300");     // Seconds
+// Optimize for CPU-bound tasks
+System.setProperty("analyzer.threads", String.valueOf(Runtime.getRuntime().availableProcessors()));
+
+// Optimize for I/O-bound tasks
+System.setProperty("analyzer.threads", String.valueOf(Runtime.getRuntime().availableProcessors() * 2));
+
+// Custom queue configuration
+System.setProperty("analyzer.queue.size", "1000");
+System.setProperty("analyzer.timeout", "300");
 ```
 
-</details>
+#### File System Performance Tips
 
-## 🔧 Extending the Tool
+- Use SSD storage for better I/O performance
+- Exclude unnecessary directories (test, target, build)
+- Process files in batches for very large codebases
+- Enable file system caching for repeated analyses
 
-### 🎨 **Custom Analyzer Example**
+## Extending the Tool
 
-<details>
-<summary><strong>🧪 Create Security Analyzer</strong></summary>
+### Adding Custom Analyzers
+
+#### Example: Security Analyzer
 
 ```java
 public class SecurityAnalyzer {
@@ -513,35 +506,66 @@ public class SecurityAnalyzer {
     private static final Pattern HARDCODED_PASSWORD = 
         Pattern.compile("password\\s*=\\s*[\"'][^\"']{8,}[\"']");
     
+    private static final Pattern WEAK_CRYPTO = 
+        Pattern.compile("DES|MD5|SHA1");
+    
     public SecurityMetrics analyze(String content) {
         SecurityMetrics metrics = new SecurityMetrics();
         
-        // 🛡️ Detect SQL injection vulnerabilities
-        Matcher sqlMatcher = SQL_INJECTION.matcher(content);
-        metrics.setSqlInjectionRisks(countMatches(sqlMatcher));
+        // Detect SQL injection vulnerabilities
+        metrics.setSqlInjectionRisks(countMatches(SQL_INJECTION, content));
         
-        // 🔐 Detect hardcoded passwords
-        Matcher passwordMatcher = HARDCODED_PASSWORD.matcher(content);
-        metrics.setHardcodedPasswords(countMatches(passwordMatcher));
+        // Detect hardcoded passwords
+        metrics.setHardcodedPasswords(countMatches(HARDCODED_PASSWORD, content));
+        
+        // Detect weak cryptographic algorithms
+        metrics.setWeakCryptoUsage(countMatches(WEAK_CRYPTO, content));
         
         return metrics;
     }
 }
 ```
 
-</details>
+#### Integration with Analysis Engine
 
-### 📊 **Custom Report Format**
+```java
+public class EnhancedFileProcessor extends FileProcessor {
+    private final SecurityAnalyzer securityAnalyzer = new SecurityAnalyzer();
+    
+    @Override
+    public FileAnalysis processFile(Path file) throws IOException {
+        FileAnalysis analysis = super.processFile(file);
+        
+        // Add security analysis
+        String content = Files.readString(file);
+        SecurityMetrics securityMetrics = securityAnalyzer.analyze(content);
+        analysis.setSecurityMetrics(securityMetrics);
+        
+        return analysis;
+    }
+}
+```
+
+### Custom Report Formats
+
+#### JSON Report Generator
 
 ```java
 public class JsonReportGenerator extends ReportGenerator {
-    public void exportToJson(AnalysisResult result, String outputPath) {
-        JsonObject report = new JsonObject();
-        report.addProperty("timestamp", Instant.now().toString());
-        report.addProperty("totalFiles", result.getTotalFiles());
-        report.addProperty("averageComplexity", result.getAverageComplexity());
+    private final Gson gson = new GsonBuilder()
+        .setPrettyPrinting()
+        .setDateFormat("yyyy-MM-dd HH:mm:ss")
+        .create();
+    
+    public void exportToJson(AnalysisResult result, String outputPath) throws IOException {
+        JsonReportModel report = JsonReportModel.builder()
+            .timestamp(Instant.now())
+            .summary(createSummary(result))
+            .fileAnalyses(result.getFileAnalyses())
+            .codeSmellDistribution(result.getCodeSmellSummary())
+            .complexityDistribution(result.getComplexityDistribution())
+            .build();
         
-        // 💾 Write to file
         try (FileWriter writer = new FileWriter(outputPath)) {
             gson.toJson(report, writer);
         }
@@ -549,77 +573,144 @@ public class JsonReportGenerator extends ReportGenerator {
 }
 ```
 
-## 🐛 Troubleshooting
+#### HTML Report Generator with Charts
 
-### 🚨 **Common Issues**
+```java
+public class HtmlReportGenerator extends ReportGenerator {
+    public void exportToHtml(AnalysisResult result, String outputPath) throws IOException {
+        VelocityEngine velocityEngine = new VelocityEngine();
+        Template template = velocityEngine.getTemplate("report-template.html");
+        
+        VelocityContext context = new VelocityContext();
+        context.put("result", result);
+        context.put("chartData", generateChartData(result));
+        context.put("generatedAt", LocalDateTime.now());
+        
+        try (FileWriter writer = new FileWriter(outputPath)) {
+            template.merge(context, writer);
+        }
+    }
+}
+```
 
-<details>
-<summary><strong>💥 OutOfMemoryError</strong></summary>
+## Troubleshooting
 
-**Problem:** `java.lang.OutOfMemoryError: Java heap space`
+### Common Issues and Solutions
 
-**Solutions:**
+#### OutOfMemoryError
+
+**Problem**: `java.lang.OutOfMemoryError: Java heap space`
+
+**Root Causes**:
+- Analyzing very large files or projects
+- Insufficient heap memory allocation
+- Memory leaks in custom analyzers
+
+**Solutions**:
 ```bash
-# 🔧 Increase heap size
+# Increase heap size
 java -Xmx4g -jar SmartCodeAnalyzer.jar
 
-# 📊 Use memory-efficient GC
+# Use memory-efficient garbage collector
 java -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -jar SmartCodeAnalyzer.jar
 
-# 🎯 Process in batches
+# Enable heap dump for analysis
+java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/ -jar SmartCodeAnalyzer.jar
+
+# Process files in smaller batches
 java -Danalyzer.batch.size=50 -jar SmartCodeAnalyzer.jar
 ```
 
-</details>
+#### File Access Permission Issues
 
-<details>
-<summary><strong>🔒 Permission Issues</strong></summary>
+**Problem**: `java.nio.file.AccessDeniedException`
 
-**Problem:** `java.nio.file.AccessDeniedException`
-
-**Solutions:**
+**Solutions**:
 ```bash
-# 🔧 Fix permissions
+# Fix file permissions (Linux/Mac)
 chmod -R 755 /path/to/project
 
-# 🐧 Linux/Mac - Run with sudo (if needed)
+# Run with appropriate permissions (if necessary)
 sudo java -jar SmartCodeAnalyzer.jar
 
-# 🪟 Windows - Run as Administrator
+# Windows: Run Command Prompt as Administrator
 ```
 
-</details>
+#### Thread Pool Exhaustion
 
-<details>
-<summary><strong>⚡ Performance Issues</strong></summary>
+**Problem**: `java.util.concurrent.RejectedExecutionException`
 
-**Problem:** Slow analysis performance
-
-**Solutions:**
+**Solutions**:
 ```bash
-# 🎯 Exclude unnecessary directories
-java -Danalyzer.exclude="test,target,build" -jar SmartCodeAnalyzer.jar
-
-# 🧵 Optimize thread count
+# Reduce concurrent processing
 java -Danalyzer.threads=4 -jar SmartCodeAnalyzer.jar
 
-# 📊 Enable parallel GC
-java -XX:+UseParallelGC -jar SmartCodeAnalyzer.jar
+# Increase queue size
+java -Danalyzer.queue.size=2000 -jar SmartCodeAnalyzer.jar
+
+# Increase timeout
+java -Danalyzer.timeout=600 -jar SmartCodeAnalyzer.jar
 ```
 
-</details>
+#### Performance Issues
 
-### 🔍 **Debug Mode**
+**Symptoms**: Analysis takes unusually long time
+
+**Common Causes and Solutions**:
+
+1. **Large Files**: 
+   ```bash
+   # Skip very large files
+   java -Danalyzer.max.file.size=1000000 -jar SmartCodeAnalyzer.jar
+   ```
+
+2. **Complex Regex Patterns**:
+   ```bash
+   # Disable expensive patterns
+   java -Danalyzer.disable.patterns=long_method,god_class -jar SmartCodeAnalyzer.jar
+   ```
+
+3. **Insufficient Memory**:
+   ```bash
+   # Increase memory allocation
+   java -Xmx8g -jar SmartCodeAnalyzer.jar
+   ```
+
+4. **I/O Bottlenecks**:
+   ```bash
+   # Exclude unnecessary directories
+   java -Danalyzer.exclude=test,target,build,node_modules -jar SmartCodeAnalyzer.jar
+   ```
+
+### Debug Mode and Logging
+
+#### Enable Verbose Logging
 
 ```bash
-# 📝 Enable verbose logging
+# Debug level logging
 java -Dlogging.level=DEBUG -jar SmartCodeAnalyzer.jar
 
-# 📊 Performance profiling
-java -XX:+PrintCompilation -XX:+UnlockDiagnosticVMOptions -XX:+PrintInlining -jar SmartCodeAnalyzer.jar
+# Trace level for detailed analysis
+java -Dlogging.level=TRACE -jar SmartCodeAnalyzer.jar
+
+# Log to file
+java -Dlogging.file=/tmp/analyzer.log -jar SmartCodeAnalyzer.jar
 ```
 
-## 🤝 Contributing
+#### Performance Profiling
+
+```bash
+# Enable JVM profiling
+java -XX:+PrintCompilation -XX:+UnlockDiagnosticVMOptions -XX:+PrintInlining -jar SmartCodeAnalyzer.jar
+
+# Monitor thread activity
+java -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCApplicationConcurrentTime -jar SmartCodeAnalyzer.jar
+
+# Flight recorder (Java 11+)
+java -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=analysis.jfr -jar SmartCodeAnalyzer.jar
+```
+
+## Contributing
 
 <div align="center">
 
@@ -629,70 +720,91 @@ java -XX:+PrintCompilation -XX:+UnlockDiagnosticVMOptions -XX:+PrintInlining -ja
 
 </div>
 
-### 🌟 **Ways to Contribute**
+### How to Contribute
+
+We welcome contributions from the community! Here are several ways you can help:
 
 <table>
 <tr>
 <td width="33%" align="center">
 
-**🐛 Report Bugs**  
-Found an issue?  
-[Create Issue](https://github.com/SafwanGanz/code_analyzer/issues/new?template=bug_report.md)
+**Report Bugs**  
+Found an issue? Help us improve by reporting it.  
+[Create Bug Report](https://github.com/SafwanGanz/code_analyzer/issues/new?template=bug_report.md)
 
 </td>
 <td width="33%" align="center">
 
-**💡 Suggest Features**  
-Have an idea?  
-[Feature Request](https://github.com/SafwanGanz/code_analyzer/issues/new?template=feature_request.md)
+**Suggest Features**  
+Have an idea for improvement?  
+[Request Feature](https://github.com/SafwanGanz/code_analyzer/issues/new?template=feature_request.md)
 
 </td>
 <td width="33%" align="center">
 
-**🔧 Submit PR**  
-Ready to code?  
-[Contributing Guide](CONTRIBUTING.md)
+**Submit Code**  
+Ready to contribute code?  
+[View Contributing Guide](CONTRIBUTING.md)
 
 </td>
 </tr>
 </table>
 
-### 🎯 **Development Setup**
+### Development Setup
 
 ```bash
-# 🍴 Fork the repository
+# Fork the repository
 gh repo fork SafwanGanz/code_analyzer
 
-# 📥 Clone your fork
+# Clone your fork
 git clone https://github.com/YOUR_USERNAME/code_analyzer.git
 cd code_analyzer
 
-# 🌿 Create feature branch
+# Create feature branch
 git checkout -b feature/amazing-new-feature
 
-# 🔨 Make your changes and commit
-git commit -m "✨ Add amazing new feature"
+# Make changes and commit
+git commit -m "Add amazing new feature"
 
-# 🚀 Push and create PR
+# Push and create PR
 git push origin feature/amazing-new-feature
 ```
 
-### 📋 **Pull Request Checklist**
+### Pull Request Guidelines
 
-- [ ] 🧪 Tests pass (`mvn test`)
-- [ ] 📝 Code follows style guidelines
-- [ ] 📚 Documentation updated
-- [ ] 🏷️ Appropriate labels added
-- [ ] 📋 Linked to relevant issues
+Before submitting a pull request, please ensure:
 
-## 📄 License
+- [ ] **Tests Pass**: Run `mvn test` to verify all tests pass
+- [ ] **Code Style**: Follow existing code style and formatting
+- [ ] **Documentation**: Update documentation for new features
+- [ ] **Performance**: Consider performance impact of changes
+- [ ] **Backward Compatibility**: Maintain API compatibility where possible
+
+### Code Style Guidelines
+
+- Use meaningful variable and method names
+- Follow Java naming conventions
+- Add JavaDoc comments for public APIs
+- Include unit tests for new functionality
+- Maintain consistent indentation (4 spaces)
+
+### Issue Labels
+
+We use labels to categorize issues:
+
+- ![bug](https://img.shields.io/badge/bug-d73a4a) - Something isn't working
+- ![enhancement](https://img.shields.io/badge/enhancement-a2eeef) - New feature or request  
+- ![good first issue](https://img.shields.io/badge/good%20first%20issue-7057ff) - Good for newcomers
+- ![help wanted](https://img.shields.io/badge/help%20wanted-008672) - Extra attention is needed
+- ![documentation](https://img.shields.io/badge/documentation-0075ca) - Improvements or additions to documentation
+
+## License
 
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**This project is licensed under the MIT License**  
-See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 </div>
 
@@ -700,26 +812,24 @@ See the [LICENSE](LICENSE) file for details.
 
 <div align="center">
 
-### 🌟 **Star History**
+### Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=SafwanGanz/code_analyzer&type=Timeline)](https://star-history.com/#SafwanGanz/code_analyzer&Timeline)
 
-### 💖 **Support the Project**
+### Support the Project
 
-If this tool helps you write better code, consider:
+If this tool helps you write better code, consider supporting the project:
 
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-pink?style=for-the-badge&logo=github)](https://github.com/sponsors/SafwanGanz)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/safwanganz)
-[![PayPal](https://img.shields.io/badge/PayPal-donate-blue?style=for-the-badge&logo=paypal)](https://paypal.me/SafwanGanz)
 
-### 🔗 **Connect With Us**
+### Connect With the Team
 
 [![GitHub](https://img.shields.io/badge/GitHub-follow-black?style=for-the-badge&logo=github)](https://github.com/SafwanGanz)
-[![Twitter](https://img.shields.io/badge/Twitter-follow-blue?style=for-the-badge&logo=twitter)](https://twitter.com/SafwanGanz)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/safwanganz)
 
 ---
 
-**Smart Code Analyzer** • *Empowering developers with actionable code quality insights* • Made with ❤️ by [SafwanGanz](https://github.com/SafwanGanz)
+**Smart Code Analyzer** - Empowering developers with actionable code quality insights  
+Made with care by [SafwanGanz](https://github.com/SafwanGanz) and [contributors](https://github.com/SafwanGanz/code_analyzer/graphs/contributors)
 
 </div>
