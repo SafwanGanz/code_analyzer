@@ -1,5 +1,6 @@
 # Smart Code Analyzer
 
+
 <div align="center">
 
 [![Java](https://img.shields.io/badge/Java-11%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.java.net/)
