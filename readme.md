@@ -57,7 +57,7 @@ Smart Code Analyzer is a comprehensive Java code analysis tool designed for ente
 git clone https://github.com/SafwanGanz/code_analyzer.git
 cd code_analyzer
 javac -d build -cp src src/main/java/com/codeanalyzer/**/*.java
-jar cfm SmartCodeAnalyzer.jar MANIFEST.MF -C build .
+jar cfm analyzer.jar MANIFEST.MF -C build .
 
 # Run analysis
 java -jar SmartCodeAnalyzer.jar
@@ -65,7 +65,7 @@ java -jar SmartCodeAnalyzer.jar
 
 ### Analyze Your First Project
 
-1. Start the application: `java -jar SmartCodeAnalyzer.jar`
+1. Start the application: `java -jar analyzer.jar`
 2. Choose option 1: "Analyze Directory"
 3. Enter your Java project path
 4. View comprehensive analysis results
